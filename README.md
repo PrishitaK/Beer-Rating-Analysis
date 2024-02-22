@@ -10,6 +10,9 @@ The project is aimed at investigating the various factors that contribute the ra
 4. corrplot
 5. caret
 
+## Dataset
+The dataset used can be found here: https://www.kaggle.com/datasets/rdoume/beerreviews
+
 ## Research Questions
 The dataset consists of the ratings provided to the beers by various users along with a rating for 4 aspects of each beer namely, it's arom, taste, palate, and appearance. The following research questions have been answered by making use of these ratings:
 1. *What property of a beer gives it the best rating?*
