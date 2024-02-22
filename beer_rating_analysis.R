@@ -8,7 +8,7 @@ library(aod)
 library(cvms)
 library(pROC)
 
-beer <- read.csv('D:/Boston University/CS555 - Foundations of Machine Learning/Project/beer_reviews.csv')
+beer <- read.csv('beer_reviews.csv')
 
 #Data Exploration
 sapply(beer, function(x) sum(is.na(x)))
@@ -70,7 +70,7 @@ nrow(x)/nrow(beer)
 
 beer <- beer[!rownames(beer) %in% rownames(x),]
 
-write.csv(beer, "D:/Boston University/CS555 - Foundations of Machine Learning/Project/beer_cleaned.csv", row.names = FALSE)
+write.csv(beer, "beer_cleaned.csv", row.names = FALSE)
 
 
 #creating a data frame which contains the data for individual beers
@@ -95,7 +95,7 @@ beer_df <- beer_df[beer_df$review_count > 10,]
 nrow(beer_df)
 #the above dataframe will be used to test out first research question.
 
-write.csv(beer_df, "D:/Boston University/CS555 - Foundations of Machine Learning/Project/beer_name_data.csv", row.names = FALSE)
+write.csv(beer_df, "beer_name_data.csv", row.names = FALSE)
 
 
 #Research Questions 
@@ -295,7 +295,7 @@ rownames(brewery_3) <- NULL
 brewery_data <- rbind(brewery_1, brewery_2,brewery_3)
 head(brewery_data)
 
-write.csv(brewery_data, "D:/Boston University/CS555 - Foundations of Machine Learning/Project/brewery.csv", row.names = FALSE)
+write.csv(brewery_data, "brewery.csv", row.names = FALSE)
 
 
 #Hypotheses:
@@ -410,7 +410,7 @@ rownames(style_3) <- NULL
 style_data <- rbind(style_1, style_2, style_3)
 head(style_data)
 
-write.csv(style_data, "D:/Boston University/CS555 - Foundations of Machine Learning/Project/beer_style.csv", row.names = FALSE)
+write.csv(style_data, "beer_style.csv", row.names = FALSE)
 
 
 #Hypotheses:
