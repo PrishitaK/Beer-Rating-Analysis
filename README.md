@@ -43,3 +43,6 @@ ANOVA is used again to compare the average ratings for the top 3 beer styles, th
 
 ### Is there a significant difference between the average rating for beers with a higher alcohol content as compared to those with a lower alcohol content?
 The alcohol by volume feature was first converted to a categorical feature to split the data into two groups. The two new subsets were used to perform two-sample t-test. The test showed evidence that the mean overal rating for beer with higher alcohol content is significantly different from beers with lower alcohol content.
+
+
+**This project was competed as part of the *CS-555 Foundations of Machine Learning* course at Boston University**
